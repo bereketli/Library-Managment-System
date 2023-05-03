@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Adminstrator Page</title>
+   <link rel="stylesheet" type="text/css" href="/stylesheet/login/homePage.css">
+   <link rel="stylesheet" type="text/css" href="/stylesheet/login/login.css">
+   <link rel="stylesheet" type="text/css" href="/stylesheet/librarist/add.css">
+   <link rel='stylesheet' type='text/css'  href='/stylesheet/login/stylehome.css'>
+  </head>
+<body>
+   <header>
+       <div class="Home">
+          <a href="home"><img width="60" height="60" src="/images/login/Home.png"></a>
+       </div>
+
+       <form>
+         <div class="search-content">
+           
+           <div class="filter">
+             <label>Filter :</label>
+             <select class="select">
+               <option class="title" value="Search by Title">Title</option>
+               <option class="author" value="Search by Author">Author</option>
+             </select>
+           </div>
+           <div class="search">
+             <input type="text" placeholder="   Search here by Author or Title of The book...">
+             <button><img width="25" height="25" src="/images/login/searchFor.png"></button>
+           </div>
+         </div>
+       </form>
+    <div class="dropdown">
+     <button class="btn"><img src="/images/login/Menu.png" width="50px" height="50px"></button>
+     <div class="dropdown-content"> 
+      <div id="btnAddStudent"><a href="#" >Add new Student</a></div>
+      <div id="btnAddBook"><a href="#">Add new Book</a></div>
+      <div id="btnAddLiberarist"><a href="#">Add new Librarian</div>
+        <div id="btnAddAdminstrator"><a href="#">Add new Adminstrator</div>
+        <div> <a href="/adminPage/logout">Log Out</a></div>
+     </div>
+    </div>
+  </header>
+  <section>
+      <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img height="600px" width="1200px" src="/images/liberarist/books.jpg">
+        <div class="text">Caption Text</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="/images/liberarist/digital.jpg" height="600px" width="1200px">
+        <div class="text">Caption Two</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="/images/liberarist/admin.jpg" height="600px" width="1200px">
+        <div class="text">Caption Three</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+
+      <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+
+  </section>
+  </section>
+   
+    <div class="footer">footer</div>
+    
+  <div class="popup-window hidden">
+        <button class="closebtn">&times;</button>
+              <div class="sub-pop">
+              <div>Title:  <input id="title" type="text" placeholder="Title" class="input"></div>
+              <div>Author:  <input id="author"type="text" placeholder="Authorsofthebook" class="input"></div>
+              <div>Gener:    <input id="gener" type="text" placeholder="gener" class="input"></div>
+              <div>Date: <input id="publish-date"type="date" placeholder="PublishedDate" class="input"></div>
+              <div>Number:    <input id="number" type="text" placeholder="10000" class="input"></div>
+              <div>BookID: <input id="bookID"type="text" placeholder="lt-4536-ui" class="input"></div>
+            <button class="" type="button" id="btnform-submit">Submmit</button>
+            </div>
+    </div>
+    <div class="popup-window2 hidden">
+      <button class="closebtn2">&times;</button>
+            <div class="sub-pop">
+            <div>First Name:  <input id="liberaristfirst_name" type="text" class="input"></div>
+            <div>Father Name:  <input id="liberaristfather_name"type="text"  class="input"></div>
+            <div>Phone Number:    <input id="liberaristphone_number" type="text"  class="input"></div>
+            <div>Address: <input id="liberaristaddress"type="text"  class="input"></div>
+            <div>email:    <input id="liberaristemail" type="text"  class="input"></div>
+            <div>Pass Key: <input id="liberaristpass_key"type="password"  class="input"></div>
+            <div>ID: <input id="liberaristID"type="text"  class="input"></div>
+          <button class="" type="button" id="btnform-submit2">Submmit</button>
+          </div>
+  </div>
+  <div class="popup-window3 hidden">
+    <button class="closebtn3">&times;</button>
+          <div class="sub-pop">
+          <div>First Name:  <input id="studentfirst_name" type="text" class="input"></div>
+          <div>Father Name:  <input id="studentfather_name"type="text"  class="input"></div>
+          <div>Phone Number:    <input id="studentphone_number" type="text"  class="input"></div>
+         <div>email:    <input id="studentemail" type="text"  class="input"></div>
+         <div>ID: <input id="studentID"type="text"  class="input"></div>
+        <button class="" type="button" id="btnform-submit3">Submmit</button>
+        </div>
+</div>
+    <script src="script/adminstrator/adminstrator.js"></script>
+    
+</body>
+</html>

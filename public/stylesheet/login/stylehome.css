@@ -1,0 +1,200 @@
+ :root{
+     --popup: linear-gradient(to top right, rgb(235, 59, 47),rgb(208, 202, 94),yellow,rgb(95, 222, 95),rgb(128, 97, 128));
+
+     --middle-back:linear-gradient(to top right ,white,rgb(254, 197, 197));
+     --color-btnnav:linear-gradient(to top left ,rgb(193, 171, 75),rgb(158, 198, 205));
+     
+     --body-gradient: linear-gradient(to top right,rgb(247, 244, 164),rgba(124, 212, 185, 0.504)); 
+    
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+      }
+ body{
+     
+     display:grid;
+     background-color: #477d7d;
+     
+     
+ }
+ .navigator { 
+     
+   display:flex;
+  background:var(--body-gradient);
+   height:6rem;
+
+}
+.list-navigators{
+display:flex;
+position:absolute;
+gap:1rem;
+float:right;
+margin-left:50rem;
+margin-top:3rem;
+}
+ul{
+    font-family: 'Arial Narrow';
+    list-style-type:none;
+}
+li{
+    color:var(--color-btnnav);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+a{
+    text-decoration:none;
+}
+.footer{
+    height:10rem;
+    background-color:rgb(84, 117, 124);
+    
+}
+.middle{
+    background:rgb(84, 91, 74);
+    
+
+}
+.first-body{
+   background-image:url(/images/login/candelbook.jpeg);
+   height:45rem;
+
+   gap:5rem;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   
+}
+.proverb-container{
+  position: relative;
+    margin-top: 4rem;
+     width:50%;
+     height:30%;
+    margin:auto;
+    background-color:rgba(0,0,0.5);
+    padding: 4rem 1rem ;
+    opacity:0.3;
+}
+.proverb{
+   z-index: 1;
+   opacity: 1;
+    position:absolute;
+    color:white;
+    font-size: 2.5rem;
+}
+.aboutus{
+    background-color: rgb(152, 234, 170);
+    
+    height:30rem;
+}
+
+
+
+  .searchtotal{width:14.6rem;
+    margin-left:10rem;
+      margin-top:2rem;
+      height:1.5rem;
+      background-color: black;
+      display:flex;
+      
+  }
+  .search{
+      
+      
+      width:13rem;
+      height:1.5rem;
+      
+  }
+  .btn-search{
+      border-radius:none;  
+      height:1.5rem;
+      background-color:rgb(236, 246, 223);
+  }
+  .btn-search:hover{
+    background-color:rgb(198, 220, 167);
+
+  }
+  #search-image{
+      
+      width:1.5rem;
+      height:1.5rem;
+      color:black;
+      
+  }
+  .sticky {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+}
+ .hidden{
+    display:none; 
+}   
+.popup-window ,.popup-window2 ,.popup-window3{
+    position:absolute;
+    margin:auto;
+    width:70%;
+    height:60%;
+    top:4rem;
+    left:3rem;
+    background:var(--popup);
+    border-radius:10%;
+    overflow-y:scroll;
+}
+.closebtn,.closebtn2 ,.closebtn3,.closebtnReturn{
+    position:absolute;
+    right:2rem;
+    top:1rem;
+    border:none;
+    font-size:40px;
+    color:rgb(157, 90, 90);
+    cursor:pointer;
+   
+}
+.closebtn:hover{
+    color:red;
+}
+tr{
+    display:flex;
+    gap:5rem;
+    height:2.5rem;
+    align-items: left;
+}
+tr:nth-child(1){
+   gap:6.5rem; 
+   font-size:1.3rem;
+}
+
+tr:nth-child(even){
+    background-color:rgb(229, 229, 224);
+    border-radius: 5%;
+}
+
+table, .table{
+   
+    width:90%;
+    margin:auto;
+
+}
+.sub-pop{
+    margin-left: 2rem;
+    font-size: 1.4rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.input{
+    
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    width:22rem;
+    height:1.5rem;
+    margin-top: 1.5rem;
+    padding: 0.3rem 1rem;
+    font-size:1.2rem;
+    }
+    #warning{
+        color:red;
+        font-size: 1.3rem;
+    }

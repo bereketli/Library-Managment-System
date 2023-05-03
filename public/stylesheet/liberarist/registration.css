@@ -1,0 +1,68 @@
+header{
+	display: flex;
+	flex-direction: column;
+	
+
+}
+section form{
+	display: flex;
+	flex-direction: column;
+    background-color: white;
+
+}
+form {
+	
+    margin-left: 300px;
+}
+form div{
+	margin: 7px;
+
+
+}
+form input{
+	padding: 10px;
+	width: 300px;
+    border: 2px blueviolet solid;
+    
+}
+form input:hover{
+	border: 4px blueviolet solid;
+}
+form label{
+	font-size: 16px;
+	font-weight: bold;
+}
+.input-1 input{
+	text-transform: uppercase;
+
+}
+.input-2 input{
+	text-transform: uppercase;
+
+}
+ .input-3 input{
+	text-transform: uppercase;
+
+}
+.date input{
+
+	text-transform: uppercase;
+
+}
+.email input{
+
+	padding: 10px;
+}
+.save{
+
+	margin-left: 30px;
+}
+.save button:hover{
+
+    background-color: blue;
+    color: white;
+}
+.password{
+
+	margin-right: 0px;
+}

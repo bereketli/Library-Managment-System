@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Borrow Book</title>
+	<link rel="stylesheet" type="text/css" href="/librarist/registration.css">
+  <link rel="stylesheet" type="text/css" href="/login/homePage.css">
+  <link rel="stylesheet" type="text/css" href="/login/login.css">
+  <link rel="stylesheet" type="text/css" href="/librarist/add.css">
+</head>
+<body>
+
+
+<header>
+       <div class="Home">
+          <a href="HomePage"><img width="60" height="60" src="/login/Home.png"></a>
+       </div>
+
+       <form>
+         <div class="search-content">
+           
+           <div class="filter">
+             <label>Filter :</label>
+             <select class="select">
+               <option class="title" value="Search by Title">Title</option>
+               <option class="author" value="Search by Author">Author</option>
+             </select>
+           </div>
+           <div class="search">
+             <input type="text" placeholder="   Search here by Author or Title of The book...">
+             <button><img width="25" height="25" src="/login/searchFor.png"></button>
+           </div>
+         </div>
+       </form>
+    <div class="nav">
+     <button class="btn"><img src="/login/Menu.png" width="50px" height="50px"></button>
+     <div class="nav-links"> 
+          <button><a href="returnBook" ><h4>Book Return</h4></a></h</button>
+          <button><a href="borrowBook" ><h4>Borrow Book </h4></a></button> 
+          <button> <a href="login">Log Out</a></button>
+     </div>
+    </div>
+  </header>
+
+
+
+
+<section>
+<form align ="center"  action = "/borrowBook" method="POST">
+
+	<h1 align = "center"> Borrow Book</h1>
+	<div id="container">
+		<label> Book ID</label>
+	<div ><input name = "bookID"   type = "text"> </div> <br>
+	<label> Student ID</label>
+	<div ><input name = "studentID"  type = "text"> </div> <br>
+	<label> Borrow Date</label>
+	<div ><input name = "borrowDate"  type = "date"> </div> <br>
+	<div > <input  name= "submit" value ="submit" type = "submit"> </div> 
+
+	</div>
+
+</form>
+</section>
+
+   <footer>
+      <div class="contact">
+         <div class="contact-at">
+          <h2>Contact @</h2>
+        </div>
+        <div class="email">
+          <div class="text-1">
+            <h2>Email</h2>
+          </div>
+          <div class="em">
+            <a href="info.external@aau.edu.et"><img src="/login/email.png" width="50px" height="50px"></a>
+          </div>
+        </div>
+        <div class="facebook">
+          <div class="text-1">
+            <h2>facebook</h2>
+          </div>
+          <div class="fb">
+            <a href="https://www.facebook.com/Addis-Ababa-University-496255483792611/"><img src="/login/fb.png" width="50px" height="50px"></a>
+          </div>
+        </div>
+        <div class="telegram">
+          <div class="text-1">
+            <h2>telegram</h2>
+          </div>
+          <div class="tele">
+            <a href="https://t.me/Addisababauniversity"><img src="/login/tele.png" width="50px" height="50px"></a>
+          </div>
+        </div>
+        <div class="internet">
+          <div class="text-1">
+            <h3>Website</h3>
+          </div>
+          <div class="int">
+            <a href="http://www.aau.edu.et/?fbclid=IwAR3yz71wyj-C5s96ndVltaY5ZULKwvIkFYun2iw20WVz2AyObknrSqV1Uis"><img src="/login/internet.png" width="50px" height="50px"></a>
+          </div>
+        </div>
+     </div> 
+     <div class="contact">
+        <div class="contact">
+        <div style="color: white;margin: 0 auto;">
+          Copyright © 2014
+          Designed by TAG B<sup>2</sup>
+        </div>
+
+    </div>
+  </footer>
+</body>
+</html>

@@ -14,14 +14,15 @@
      
      display:grid;
      background-color: #477d7d;
-     grid-auto-rows: 6rem 70rem 10rem;
+     
+     
  }
  .navigator { 
      
    display:flex;
-    background:var(--body-gradient);
-    position:relative;
-    position:sticky;
+  background:var(--body-gradient);
+   height:6rem;
+
 }
 .list-navigators{
 display:flex;
@@ -29,7 +30,6 @@ position:absolute;
 gap:1rem;
 float:right;
 margin-left:50rem;
-
 margin-top:3rem;
 }
 ul{
@@ -44,16 +44,28 @@ li{
 a{
     text-decoration:none;
 }
-footer{
-    height:2rem;
-    background-color:rgb(5, 69, 69);
+.footer{
+    height:10rem;
+    background-color:rgb(156, 71, 100);
+    
 }
 .middle{
     background:var(--middle-back);
-    display:grid;
+    
+
 }
 .first-body{
     background-image:url(book2.webp);
+   height:45rem;
+   
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   
+}
+.aboutus{
+    background-color: rgb(196, 251, 208);
+    
+    height:30rem;
 }
 
 
@@ -87,4 +99,12 @@ footer{
       width:1.5rem;
       height:1.5rem;
       color:black;
+      
   }
+  .sticky {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+}
+  
